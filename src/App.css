@@ -9,7 +9,7 @@
 .ui.accordion .title:not(.ui) {
   font-size: 20px;
   font-weight: bold;
-  background-color: #2185d0;
+  background-color: #aeffbb;
   margin: 2px;
 }
 
@@ -32,9 +32,22 @@
   padding-bottom: 10px !important;
 }
 
-.ui.blue.label,
-.ui.blue.labels .label {
+.ui.label,
+.ui.labels .label {
   position: absolute;
   right: 0px;
   top: 0px;
+}
+
+.ui.toggle.checkbox input:checked~.box:before,
+.ui.toggle.checkbox input:checked~label:before {
+  background-color: #21ba45 !important;
+}
+
+.ui.toggle.checkbox input:checked~label:before {
+  background-color: #21ba45 !important;
+}
+
+.ui.toggle.checkbox input:focus:checked~label:before {
+  background-color: #21ba45 !important;
 }

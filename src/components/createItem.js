@@ -56,7 +56,7 @@ class CreateItem extends Component {
             value={price}
             onChange={this.handleChange.bind(this, "price")}
           />
-          <Form.Button content="create Item" />
+          <Form.Button positive content="create Item" />
         </Form.Group>
       </Form>
     );

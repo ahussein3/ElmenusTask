@@ -40,7 +40,6 @@ class ItemComponent extends Component {
   render() {
     const { items } = this.props;
     const { name, description, price } = this.state.itemData;
-    console.log("items", this.props);
     return (
       <Item.Group>
         {items.map((item) => (
@@ -49,14 +48,14 @@ class ItemComponent extends Component {
             <Item.Content>
               <Item.Header>{item.name}</Item.Header>
               <Item.Description>{item.description}</Item.Description>
-              <Label color="blue" className="ui right floated">
+              <Label color="yellow" className="ui right floated">
                 {item.price} EGP
               </Label>
 
               {this.props.editMode ? (
                 <React.Fragment>
                   <Button
-                    color="red"
+                    color='red'
                     onClick={this.props.deleteItem.bind(
                       this,
                       this.props.catId, item.id
@@ -66,7 +65,7 @@ class ItemComponent extends Component {
                     Delete
                   </Button>
                   <Button
-                    color="blue"
+                    color='yellow'
                     onClick={this.showEditDialog.bind(this, item)}
                     className="ui right floated"
                   >

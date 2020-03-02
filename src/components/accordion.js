@@ -23,7 +23,6 @@ export default class AccordionComponent extends Component {
   render() {
     const { activeIndex } = this.state;
     const { categories } = this.props;
-    console.log("categories", categories);
     return (
       <Accordion>
         {categories.map((category) => (

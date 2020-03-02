@@ -30,7 +30,7 @@ const reducer = (state = intialState, action) => {
         case "DELETE_ITEM":
             newState = Object.assign({}, state.data);
             for (let i = 0; i < newState.categories.length; i++) {
-                if (newState.categories[i]["id"] === action.catID) {
+                if (newState.categories[i]["id"] === action.catId) {
                     index = i;
                 }
             }

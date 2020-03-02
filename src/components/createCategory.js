@@ -50,7 +50,7 @@ class CreateCategory extends Component {
               value={description}
               onChange={this.handleChange.bind(this, "description")}
             />
-            <Form.Button content="create category" />
+            <Form.Button positive content="create category" />
           </Form.Group>
         </Form>
       </div>
