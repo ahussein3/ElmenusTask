@@ -4,6 +4,7 @@
 3) Didn't introduce react router to this project to minimize the complixity
 and instead use Group of radio buttons to switch between Edit Mode and View Mode
 4) for UI I have used Semantic UI as required.
+5) for ease of access this project have been deployed using netlify at (https://naughty-boyd-a91089.netlify.com)
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

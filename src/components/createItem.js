@@ -27,9 +27,11 @@ class CreateItem extends Component {
   }
 
   handleSubmit = () => {
-    const index = this.props.index;
-    this.props.addItem({ ...this.state.itemData, ...{ id: Date.now() } }, index);
-    this.resetForm();
+    if (this.state.itemData.name) {
+      const index = this.props.index;
+      this.props.addItem({ ...this.state.itemData, ...{ id: Date.now() } }, index);
+      this.resetForm();
+    }
   };
 
   render() {

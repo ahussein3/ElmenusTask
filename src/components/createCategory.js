@@ -27,8 +27,10 @@ class CreateCategory extends Component {
   }
 
   handleSubmit = () => {
-    this.props.addCatogery({ ...this.state.categoryData, ...{ id: Date.now() } });
-    this.resetForm();
+    if (this.state.categoryData.name) {
+      this.props.addCatogery({ ...this.state.categoryData, ...{ id: Date.now() } });
+      this.resetForm();
+    }
   };
 
   render() {
