@@ -105,15 +105,8 @@ class ItemComponent extends Component {
           </Modal.Content>
           <Modal.Actions>
             <Button negative onClick={this.close}>
-              cancel
+              close
             </Button>
-            <Button
-              onClick={this.handleEdit}
-              positive
-              icon="checkmark"
-              labelPosition="right"
-              content="apply"
-            />
           </Modal.Actions>
         </Modal>
       </Item.Group>
